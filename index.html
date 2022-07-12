@@ -1,1 +1,108 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#3367D6">
+    <title>Salary calculation</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="images/salaryCalculation-64x64.png" type="image/x-icon">
+    <script defer type="text/javascript" src="js/downloadLabel.js"></script>
+    <script defer type="text/javascript" src="js/index.js"></script>
+    <script defer type="text/javascript" src="js/script.js"></script>
+    <script defer type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body class="preload">
+    <div id="calculatorWrapper">
+      <h1>Расчёт заработной платы</h1>
+      <div id="container">
+        <div id="itemsNameContainer">
+          <div class="itemName">Тариф</div>
+          <div class="itemName">Количество смен</div>
+          <div class="itemName">Переработка</div>
+          <div class="itemName">Праздничные</div>
+          <div class="itemName">Премия</div>
+          <div class="itemName">Пожертвование</div>
+          <div class="itemName">Аванс</div>
+          <button class="menuButton itemName">Больничные<div class="arrow"></div></button>
+          <button class="menuButton itemName">Простой<div class="arrow"></div></button>
+        </div>
+        <div id="inputsContainer">
+          <input type="number" placeholder="руб." min="0" />
+          <input type="number" placeholder="кл-во." min="0" />
+          <input type="number" placeholder="ч." min="0" />
+          <input type="number" placeholder="ч." min="0" />
+          <input type="number" placeholder="%" min="0" />
+          <input type="number" placeholder="руб." min="0" />
+          <input type="number" placeholder="руб." min="0" />
+          <input type="number" placeholder="руб." min="0" />
+          <input type="number" placeholder="руб." min="0" />
+        </div>
+      </div>
+      <div id="result">К выплате: —</div>
+      <button id="resultBtn">Расчитать</button>
+      <div class="containerTable">
+        <table>
+          <caption>Расчётный листок</caption>
+          <tbody>
+            <tr>
+              <th>Вид</th>
+              <th>Сумма</th>
+            </tr>
+            <tr>
+              <td>Часы:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Оплата по тарифу:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Ночное время:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Вредные условия:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Доплата за переработки:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Празднчные часы:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Больничные:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Премия:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Районный коэффициент:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Начислено:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Простой:</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>НДФЛ:</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

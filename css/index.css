@@ -1,0 +1,183 @@
+input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px dashed black;
+  outline: none;
+  box-sizing: border-box;
+  display: block;
+}
+
+input:not(.nameHiddenItem) {
+  position: relative;
+  z-index: 1;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+  background-color: #cccccc;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+caption {
+  margin-top: 10px;
+  text-align: right;
+}
+
+tr {
+  text-align: left;
+}
+
+td {
+  width: 220px;
+  height: 30px;
+  border: 1px dashed black;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+}
+
+th {
+  height: 30px;
+  width: 220px;
+  border: 1px solid black;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+}
+
+th:last-child {
+  height: 30px;
+  width: 80px;
+  background-color: white;
+}
+
+td:nth-child(even) {
+  width: 80px;
+  text-align: center;
+  background-color: white;
+}
+
+#calculatorWrapper {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 220px 80px;
+  grid-template-areas: "itemNameContainer inputsContainer"
+                       "result result"
+                       "resultBtn resultBtn";
+}
+
+#result {
+  height: 30px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  grid-area: result;
+  text-align: center;
+  border-left: 1px dashed black;
+  border-right: 1px dashed black;
+}
+
+#resultBtn, .appDownload {
+  height: 30px;
+  box-sizing: border-box;
+  grid-area: resultBtn;
+  border: 1px dashed black;
+}
+
+#itemsNameContainer {
+  grid-area: itemNameContainer;
+}
+
+#inputsContainer {
+  grid-area: inputsContainer;
+
+}
+
+.appDownload {
+  background-color: #dfffff;
+  padding: 0;
+}
+
+.appDownload img {
+  width: 28px;
+  padding-left: 5px;
+}
+
+.appDownload span {
+  position: relative;
+  top: -10px;
+}
+
+.itemName {
+  height: 30px;
+  padding: 5px;
+  border: 1px dashed black;
+  background-color: #eeeeee;
+  box-sizing: border-box;
+}
+
+.menuButton {
+  background-color: white;
+  background-color: #cccccc;
+  position: relative;
+  z-index: 1;
+}
+
+.nameHiddenItem {
+  transition-duration: .7s;
+}
+
+.hiddenItem {
+  margin-top: -30px;
+  opacity: 0;
+}
+
+.arrow {
+  transition-duration: .7s;
+  display: inline-block;
+  pointer-events: none;
+  position: absolute;
+  background-color: transparent;
+  border: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #444444;
+  margin-top: 3px;
+  margin-left: 2px;
+}
+
+.arrowChange {
+  border: 8px solid transparent;
+  border-bottom: 10px solid #444444;
+  margin-top: -5px;
+  margin-left: 2px;
+}
+
+.containerTable {
+  height: 0;
+  overflow: hidden;
+  transition-duration: .7s;
+  margin-bottom: 50px;
+}
+
+.containerTableOpaque {
+  height: 450px;
+}
+
+.preload * {
+  transition: none !important;
+}

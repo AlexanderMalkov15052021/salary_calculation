@@ -1,0 +1,71 @@
+{
+  "short_name": "Калькулятор",
+  "name": "Расчёт зарплаты",
+  "icons": [
+    {
+      "src": "images/salaryCalculation-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/salaryCalculation-192x192.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/salaryCalculation-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/salaryCalculation-64x64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "images/salaryCalculation-64x64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "images/salaryCalculation-128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "prefer_related_applications": false,
+  "scope": "index.html",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "Расчёт зарплаты",
+      "short_name": "Калькулятор",
+      "description": "Калькулятор считает зарплату",
+      "url": "index.html",
+      "icons": [{ "src": "images/salaryCalculation-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Расчёт зарплаты",
+      "short_name": "Калькулятор",
+      "description": "Калькулятор считает зарплату",
+      "url": "index.html",
+      "icons": [{ "src": "images/salaryCalculation-192x192.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Калькулятор для расчёта зарплаты",
+  "screenshots": [
+    {
+      "src": "images/salaryCalculation-540x720.png",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "images/salaryCalculation-540x720..jpg",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    }
+  ]
+}
